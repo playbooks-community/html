@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Tailwind Starter</title>
+</head>
+<body class="bg-white text-slate-900 dark:bg-slate-950 dark:text-slate-100 font-sans antialiased">
+
+  <!-- Nav -->
+  <header class="sticky top-0 z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur border-b border-slate-200 dark:border-slate-800">
+    <nav class="max-w-6xl mx-auto px-6 h-16 flex items-center gap-6">
+      <a href="/" class="text-xl font-bold text-indigo-600 dark:text-indigo-400 mr-auto">TailwindApp</a>
+      <a href="#features" class="text-sm text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors">Features</a>
+      <a href="#cards" class="text-sm text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors">Cards</a>
+      <a href="#footer" class="text-sm text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="min-h-[calc(100vh-4rem)] flex items-center justify-center px-6 py-24 text-center bg-gradient-to-br from-white to-slate-100 dark:from-slate-950 dark:to-slate-900">
+      <div class="max-w-2xl">
+        <span class="inline-block mb-4 px-3 py-1 text-xs font-semibold tracking-wide text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950 rounded-full uppercase">
+          Tailwind v4 + Vite v6
+        </span>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-6">
+          Build fast.<br />Ship beautiful.
+        </h1>
+        <p class="text-lg text-slate-500 dark:text-slate-400 mb-8 max-w-xl mx-auto">
+          A clean starter with Tailwind CSS v4 and Vite. Utility-first styling, modern tooling, zero config.
+        </p>
+        <div class="flex flex-wrap gap-3 justify-center">
+          <a href="#features" class="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-lg transition-colors">
+            Explore
+          </a>
+          <a href="https://tailwindcss.com/docs" target="_blank" rel="noopener" class="px-6 py-3 border border-slate-300 dark:border-slate-700 hover:border-indigo-400 dark:hover:border-indigo-500 text-slate-700 dark:text-slate-300 font-semibold rounded-lg transition-colors">
+            Docs
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="py-24 px-6">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-4">Why this starter?</h2>
+        <p class="text-center text-slate-500 dark:text-slate-400 mb-12 max-w-xl mx-auto">
+          Everything you need to go from idea to production without the boilerplate.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <div class="p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900">
+            <div class="w-10 h-10 bg-indigo-100 dark:bg-indigo-900 rounded-lg flex items-center justify-center text-indigo-600 dark:text-indigo-400 mb-4 text-xl">⚡</div>
+            <h3 class="font-semibold text-lg mb-2">Vite v6</h3>
+            <p class="text-slate-500 dark:text-slate-400 text-sm">Instant dev server, lightning-fast HMR, and optimized production builds.</p>
+          </div>
+          <div class="p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900">
+            <div class="w-10 h-10 bg-sky-100 dark:bg-sky-900 rounded-lg flex items-center justify-center text-sky-600 dark:text-sky-400 mb-4 text-xl">🎨</div>
+            <h3 class="font-semibold text-lg mb-2">Tailwind v4</h3>
+            <p class="text-slate-500 dark:text-slate-400 text-sm">The latest Tailwind with CSS-first config, native CSS cascade layers, and no PostCSS setup.</p>
+          </div>
+          <div class="p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900">
+            <div class="w-10 h-10 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center text-green-600 dark:text-green-400 mb-4 text-xl">🧩</div>
+            <h3 class="font-semibold text-lg mb-2">No Framework</h3>
+            <p class="text-slate-500 dark:text-slate-400 text-sm">Plain HTML and vanilla JS — add React, Vue, or Svelte whenever you need it.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards -->
+    <section id="cards" class="py-24 px-6 bg-slate-50 dark:bg-slate-900">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-12">Sample Cards</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <article class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-slate-200 dark:border-slate-700">
+            <div class="h-40 bg-gradient-to-br from-indigo-400 to-purple-500"></div>
+            <div class="p-5">
+              <h3 class="font-semibold text-lg mb-1">Card Title One</h3>
+              <p class="text-slate-500 dark:text-slate-400 text-sm mb-4">A short description of what this card is about and why it matters.</p>
+              <a href="#" class="text-sm font-medium text-indigo-600 dark:text-indigo-400 hover:underline">Read more →</a>
+            </div>
+          </article>
+          <article class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-slate-200 dark:border-slate-700">
+            <div class="h-40 bg-gradient-to-br from-sky-400 to-cyan-500"></div>
+            <div class="p-5">
+              <h3 class="font-semibold text-lg mb-1">Card Title Two</h3>
+              <p class="text-slate-500 dark:text-slate-400 text-sm mb-4">A short description of what this card is about and why it matters.</p>
+              <a href="#" class="text-sm font-medium text-indigo-600 dark:text-indigo-400 hover:underline">Read more →</a>
+            </div>
+          </article>
+          <article class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-slate-200 dark:border-slate-700">
+            <div class="h-40 bg-gradient-to-br from-rose-400 to-orange-400"></div>
+            <div class="p-5">
+              <h3 class="font-semibold text-lg mb-1">Card Title Three</h3>
+              <p class="text-slate-500 dark:text-slate-400 text-sm mb-4">A short description of what this card is about and why it matters.</p>
+              <a href="#" class="text-sm font-medium text-indigo-600 dark:text-indigo-400 hover:underline">Read more →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="border-t border-slate-200 dark:border-slate-800 py-10 px-6 text-center text-slate-500 dark:text-slate-400 text-sm">
+    <p>Built with <a href="https://tailwindcss.com" target="_blank" rel="noopener" class="text-indigo-600 dark:text-indigo-400 hover:underline">Tailwind CSS</a> and <a href="https://vite.dev" target="_blank" rel="noopener" class="text-indigo-600 dark:text-indigo-400 hover:underline">Vite</a>.</p>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

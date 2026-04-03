@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Basic Starter</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="/" class="nav__logo">MySite</a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav__links" role="list">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="dark-toggle" aria-label="Toggle dark mode">&#9790;</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero__content">
+        <h1 class="hero__title">Build something great.</h1>
+        <p class="hero__subtitle">A clean, minimal HTML starter — no build step, no dependencies, just code.</p>
+        <a href="#features" class="btn">Get Started</a>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <h2 class="section-title">Features</h2>
+      <div class="features__grid">
+        <article class="card">
+          <h3>Semantic HTML5</h3>
+          <p>Proper document structure with meaningful elements for accessibility and SEO.</p>
+        </article>
+        <article class="card">
+          <h3>Responsive Layout</h3>
+          <p>CSS Grid and Flexbox keep everything looking great from mobile to desktop.</p>
+        </article>
+        <article class="card">
+          <h3>No Build Step</h3>
+          <p>Open <code>index.html</code> in your browser and you're done.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2 class="section-title">Get in Touch</h2>
+      <p>Have questions? Reach out any time.</p>
+      <a href="mailto:hello@example.com" class="btn btn--outline">Say Hello</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 MySite. Built with HTML Basic Starter.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
