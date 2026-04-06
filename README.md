@@ -1,50 +1,24 @@
-# HTML Starters
+# Playbooks Community: HTML Starters
 
-A collection of minimal, opinionated HTML starters for different tooling setups.
+A collection of starter templates for building apps with [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML).
 
 ## Starters
 
-### [html-basic-starter](./html-basic-starter/)
+| Starter | Description |
+|---|---|
+| [html-basic-starter](./starters/html-basic-starter) | Bare-bones setup to get started quickly |
+| [html-tailwind-starter](./starters/html-tailwind-starter) | Basic setup pre-configured with Tailwind CSS |
+| [html-vite-starter](./starters/html-vite-starter) | Basic setup with Vite for fast local development |
 
-No build step. Pure HTML, CSS, and vanilla JS.
-
-- Semantic HTML5 with nav, hero, feature cards, and footer
-- CSS custom properties, Grid/Flexbox layout, dark mode toggle
-- Mobile menu with hamburger toggle
-- Open `index.html` directly in your browser — done.
-
----
-
-### [html-vite-starter](./html-vite-starter/)
-
-HTML + Vite. No framework, just fast ES modules.
-
-- Vite v6 dev server with HMR
-- Vanilla JS with a counter component
-- CSS imported as a module
-- `npm install && npm run dev` to start
-
----
-
-### [html-tailwind-starter](./html-tailwind-starter/)
-
-HTML + Vite + Tailwind CSS v4.
-
-- Tailwind v4 with `@tailwindcss/vite` plugin (no PostCSS config)
-- Responsive layout: nav, hero, feature grid, cards, footer
-- Dark mode variants throughout
-- `npm install && npm run dev` to start
-
----
-
-## Quick start
+## Getting Started
 
 ```bash
-# Clone the repo, then cd into any starter:
-cd html-basic-starter
-open index.html
-
-# Or for Vite-based starters:
-cd html-vite-starter
-npm install && npm run dev
+cd starters/html-basic-starter
+npm install
+npm run dev
 ```
+
+## Resources
+
+- [HTML Documentation](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [Playbooks Community](https://github.com/playbooks-community)
