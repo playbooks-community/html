@@ -28,3 +28,26 @@ We then name the projects based on their deployment configuration and any additi
 Please request permission before creating new projects.
 Please keep all docker configurations limited to one stage.
 Please make sure each project runs before confirming completion.
+
+## playbooks.json
+
+Each project in this repository includes a `playbooks.json` configuration file at its root.
+This file is read automatically by Playbooks when connecting or syncing a play.
+
+### Required Fields
+
+- **`name`** — The project name (matches the directory name)
+- **`uuid`** — A unique identifier for the play
+- **`variant`** — The project variant; all projects here use `"starter"`
+
+### Reference Schema
+
+```json
+{
+  "name": "",
+  "uuid": "",
+  "variant": "starter"
+}
+```
+
+Full schema reference: https://www.playbooks.xyz/docs/intro/playbooks-json.md
