@@ -1,5 +1,8 @@
 {
   "name": "Html Basic Starter",
   "uuid": "html-basic-starter",
-  "variant": "starter"
+  "variant": "starter",
+  "demo": {
+    "strategy": "basic"
+  }
 }

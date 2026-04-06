@@ -1,5 +1,8 @@
 {
   "name": "Html Tailwind Starter",
   "uuid": "html-tailwind-starter",
-  "variant": "starter"
+  "variant": "starter",
+  "demo": {
+    "strategy": "basic"
+  }
 }

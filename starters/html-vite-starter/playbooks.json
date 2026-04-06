@@ -1,5 +1,8 @@
 {
   "name": "Html Vite Starter",
   "uuid": "html-vite-starter",
-  "variant": "starter"
+  "variant": "starter",
+  "demo": {
+    "strategy": "basic"
+  }
 }
