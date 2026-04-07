@@ -1,0 +1,8 @@
+{
+  "name": "Html Hello World Starter",
+  "uuid": "html-hello-world-starter",
+  "variant": "starter",
+  "demo": {
+    "strategy": "basic"
+  }
+}

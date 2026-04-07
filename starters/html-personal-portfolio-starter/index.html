@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jane Doe — Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="/" class="nav__logo">Jane Doe</a>
+      <ul class="nav__links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__content">
+        <p class="hero__eyebrow">Hi, I'm</p>
+        <h1 class="hero__name">Jane Doe</h1>
+        <p class="hero__title">Full-Stack Developer &amp; Designer</p>
+        <p class="hero__bio">I build thoughtful, performant web experiences. Currently open to new opportunities.</p>
+        <div class="hero__actions">
+          <a href="#projects" class="btn">View My Work</a>
+          <a href="#contact" class="btn btn--outline">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="about__inner">
+        <div class="about__text">
+          <h2>About Me</h2>
+          <p>I'm a developer with 5 years of experience building products for the web. I care deeply about clean code, accessibility, and thoughtful design.</p>
+          <p>When I'm not coding, you'll find me hiking, reading, or experimenting with generative art.</p>
+          <ul class="skills">
+            <li>HTML &amp; CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Figma</li>
+            <li>PostgreSQL</li>
+          </ul>
+        </div>
+        <div class="about__avatar" aria-hidden="true">
+          <div class="avatar-placeholder">JD</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects__grid">
+        <article class="project-card">
+          <div class="project-card__header">
+            <h3>Project Alpha</h3>
+            <span class="badge">Open Source</span>
+          </div>
+          <p>A developer tool that automates the tedious parts of your workflow. Built with Node.js and published on npm.</p>
+          <div class="project-card__links">
+            <a href="#" class="link">GitHub &rarr;</a>
+            <a href="#" class="link">Live Demo &rarr;</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-card__header">
+            <h3>Dashboard UI</h3>
+            <span class="badge badge--purple">Design</span>
+          </div>
+          <p>A responsive analytics dashboard built with plain HTML and CSS Grid. No JavaScript required for the layout.</p>
+          <div class="project-card__links">
+            <a href="#" class="link">GitHub &rarr;</a>
+            <a href="#" class="link">Live Demo &rarr;</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-card__header">
+            <h3>Recipe App</h3>
+            <span class="badge badge--green">Side Project</span>
+          </div>
+          <p>A full-stack recipe management app. Handles user accounts, image uploads, and a tagging system.</p>
+          <div class="project-card__links">
+            <a href="#" class="link">GitHub &rarr;</a>
+            <a href="#" class="link">Live Demo &rarr;</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Let's work together</h2>
+      <p>I'm always interested in hearing about new projects and opportunities.</p>
+      <a href="mailto:jane@example.com" class="btn">jane@example.com</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Built with HTML &amp; CSS &mdash; &copy; 2026 Jane Doe</p>
+  </footer>
+
+</body>
+</html>

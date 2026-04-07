@@ -1,0 +1,8 @@
+{
+  "name": "Html Personal Portfolio Starter",
+  "uuid": "html-personal-portfolio-starter",
+  "variant": "starter",
+  "demo": {
+    "strategy": "basic"
+  }
+}

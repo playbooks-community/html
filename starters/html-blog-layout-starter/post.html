@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Getting Started with CSS Custom Properties — The Blog</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="/" class="site-header__logo">The Blog</a>
+      <nav aria-label="Main navigation">
+        <ul class="nav__links" role="list">
+          <li><a href="index.html">Posts</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="post-layout">
+    <article class="post">
+      <header class="post__header">
+        <h1 class="post__title">Getting Started with CSS Custom Properties</h1>
+        <div class="post__meta">
+          <span>By <a href="#">Alex Kim</a></span>
+          <span class="meta-sep">&middot;</span>
+          <time datetime="2026-03-15">March 15, 2026</time>
+          <span class="meta-sep">&middot;</span>
+          <span>5 min read</span>
+        </div>
+      </header>
+
+      <div class="post__body">
+        <p>CSS custom properties — also called CSS variables — let you store values in reusable tokens. Unlike preprocessor variables (Sass, Less), they are truly part of the cascade: they can be scoped to elements, overridden by media queries, and even updated at runtime with JavaScript.</p>
+
+        <h2>Defining Custom Properties</h2>
+        <p>Custom properties are defined with a double-dash prefix and are typically placed on the <code>:root</code> pseudo-element so they're globally available:</p>
+
+        <pre><code>:root {
+  --color-accent: #4f46e5;
+  --font-sans: system-ui, sans-serif;
+  --space-4: 1rem;
+}</code></pre>
+
+        <p>You reference them with the <code>var()</code> function. You can also provide a fallback value as the second argument:</p>
+
+        <pre><code>button {
+  background-color: var(--color-accent, #4f46e5);
+  font-family: var(--font-sans);
+}</code></pre>
+
+        <h2>Scoping and Overriding</h2>
+        <p>Because custom properties cascade like any other CSS property, you can scope them to a specific element. This makes theming straightforward — define a <code>[data-theme="dark"]</code> selector that overrides your root properties:</p>
+
+        <pre><code>[data-theme="dark"] {
+  --color-bg: #0f172a;
+  --color-text: #f1f5f9;
+}</code></pre>
+
+        <p>Every element that uses <code>var(--color-bg)</code> will automatically pick up the new value. No class toggling cascade, no JavaScript swapping stylesheets.</p>
+
+        <h2>Runtime Updates</h2>
+        <p>One of the most powerful features is that you can update custom properties at runtime with JavaScript:</p>
+
+        <pre><code>document.documentElement.style.setProperty('--color-accent', '#e11d48');</code></pre>
+
+        <p>This makes dynamic theming — like letting users pick an accent color — trivial to implement.</p>
+
+        <h2>Wrapping Up</h2>
+        <p>CSS custom properties are one of the most impactful additions to the CSS specification in years. Start with a small set of tokens for color, typography, and spacing, and you'll find that your stylesheets become dramatically easier to maintain and modify.</p>
+      </div>
+    </article>
+
+    <aside class="sidebar">
+      <div class="sidebar__widget">
+        <h3>About</h3>
+        <p>Writing about the web platform, developer tools, and building things that last.</p>
+      </div>
+      <div class="sidebar__widget">
+        <h3>Topics</h3>
+        <ul class="tag-list">
+          <li><a href="#">HTML</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">JavaScript</a></li>
+          <li><a href="#">Performance</a></li>
+          <li><a href="#">Accessibility</a></li>
+        </ul>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 The Blog. Built with plain HTML and CSS.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "name": "Html Landing Page Starter",
+  "uuid": "html-landing-page-starter",
+  "variant": "starter",
+  "demo": {
+    "strategy": "basic"
+  }
+}

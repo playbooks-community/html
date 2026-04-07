@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vanilla JS SPA</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="/" class="nav__logo">VanillaSPA</a>
+      <ul class="nav__links" role="list">
+        <li><a href="#/" data-link>Home</a></li>
+        <li><a href="#/about" data-link>About</a></li>
+        <li><a href="#/counter" data-link>Counter</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="app" class="app-container">
+    <!-- Views are rendered here by the router -->
+  </main>
+
+  <footer class="footer">
+    <p>Vanilla JS SPA &mdash; no framework, no bundler.</p>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

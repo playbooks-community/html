@@ -1,0 +1,8 @@
+{
+  "name": "Html CSS Component Library Starter",
+  "uuid": "html-css-component-library-starter",
+  "variant": "starter",
+  "demo": {
+    "strategy": "basic"
+  }
+}

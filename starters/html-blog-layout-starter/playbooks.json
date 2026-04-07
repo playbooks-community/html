@@ -1,0 +1,8 @@
+{
+  "name": "Html Blog Layout Starter",
+  "uuid": "html-blog-layout-starter",
+  "variant": "starter",
+  "demo": {
+    "strategy": "basic"
+  }
+}

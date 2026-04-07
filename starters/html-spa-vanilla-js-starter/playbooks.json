@@ -1,0 +1,8 @@
+{
+  "name": "Html SPA with Vanilla JS Starter",
+  "uuid": "html-spa-vanilla-js-starter",
+  "variant": "starter",
+  "demo": {
+    "strategy": "basic"
+  }
+}
